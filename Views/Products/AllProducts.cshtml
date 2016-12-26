@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "AllProducts";
+}
+
+<h2>All Products</h2>
+
+<input type="button" id="productsList" value="List Products" />
+
+<div id="products"></div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#productsList').click(function () {
+            $.getJSON('../api/product').done(function (data) {
+                var products = "";
+                $.each(data, function (key, product) {
+                    products += product.Name + " Price: " + product.Price + " TL - Stock: " + product.Stock + "<br/>";
+                });
+                $('#products').html(products);
+            })
+        });
+    })
+</script>
