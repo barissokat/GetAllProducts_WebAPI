@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "GetProduct";
+}
+
+<h2>Get Product</h2>
+
+Product ID<input type="text" id="productId" />
+
+<br />
+
+<input type="button" id="getProduct" value="Get Product" />
+
+<br />
+
+<div id="product"></div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#getProduct').click(function () {
+            var productId = $('#productId').val();
+            $.getJSON('../api/product/' + productId).done(function (product) {
+                var productInfo = product.Name + " Price: " + product.Price + " TL - Stock: " + product.Stock + "<br/>";
+                $('#product').html(productInfo);
+            });
+        });
+    });
+</script>
