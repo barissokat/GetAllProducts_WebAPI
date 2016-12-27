@@ -21,5 +21,12 @@ namespace GetAllProducts_WebAPI.Controllers
         {
             return _products;
         }
+        public IHttpActionResult GetProduct(int id)
+        {
+            var product = (from p in _products
+                           where p.Id == id
+                           select p).FirstOrDefault();
+            return Ok(product);
+        }
     }
 }
