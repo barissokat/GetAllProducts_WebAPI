@@ -12,5 +12,9 @@ namespace GetAllProducts_WebAPI.Controllers
         {
             return View();
         }
+        public ActionResult GetProduct()
+        {
+            return View();
+        }
     }
 }
