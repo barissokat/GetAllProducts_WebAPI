@@ -24,6 +24,11 @@ Product ID<input type="text" id="productId" />
             $.getJSON('../api/product/' + productId).done(function (product) {
                 var productInfo = product.Name + " Price: " + product.Price + " TL - Stock: " + product.Stock + "<br/>";
                 $('#product').html(productInfo);
+            }).error(function (xhr, options, error) {
+                if (error == "Not Found") {
+                    alert("Product not found..");
+                    $("#product").html("");
+                }
             });
         });
     });

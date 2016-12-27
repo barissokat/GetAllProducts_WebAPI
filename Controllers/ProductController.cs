@@ -26,7 +26,11 @@ namespace GetAllProducts_WebAPI.Controllers
             var product = (from p in _products
                            where p.Id == id
                            select p).FirstOrDefault();
-            return Ok(product);
+            if (product != null)
+            {
+                return Ok(product);
+            }
+            return NotFound();
         }
     }
 }
