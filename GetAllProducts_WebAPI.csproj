@@ -248,6 +248,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Products\AllProducts.cshtml" />
     <Content Include="Views\Products\GetProduct.cshtml" />
+    <Content Include="Views\Products\CreateProduct.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
