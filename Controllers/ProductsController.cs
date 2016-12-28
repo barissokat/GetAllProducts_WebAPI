@@ -16,5 +16,9 @@ namespace GetAllProducts_WebAPI.Controllers
         {
             return View();
         }
+        public ActionResult CreateProduct()
+        {
+            return View();
+        }
     }
 }
