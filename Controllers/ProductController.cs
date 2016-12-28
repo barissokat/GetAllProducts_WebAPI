@@ -32,5 +32,13 @@ namespace GetAllProducts_WebAPI.Controllers
             }
             return NotFound();
         }
+        public IHttpActionResult Post(Product product)
+        {
+            if (_products.Where(p => p.Id == product.Id).Count() == 0)
+            {
+                return Ok();
+            }
+            return Conflict();
+        }
     }
 }
