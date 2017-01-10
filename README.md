@@ -34,4 +34,20 @@ Daha sonra istenilen **Id** textbox'a yazılarak **Ürünü Getir** butonuna bas
 
 Eğer girilen Id'ye sahip ürün, tüm ürünler listesinde bulunmuyorsa, aşağıdaki ekran görüntüsü gibi hata mesajı sayfada gösterilir.
 
-![alt tag](https://github.com/bsokat/GetAllProducts_WebAPI/blob/master/Source/GetWithId3.png)
+![alt tag](https://github.com/bsokat/GetAllProducts_WebAPI/blob/master/Source/GetWithId4.png)
+
+#### Yeni Ürün Oluşturma
+
+Projeye Web API üzerinden ürün eklenmektedir. Ürün eklenirken aynı id'ye sahip ürünlerin çakışmaması için, sayfanın hata mesajı vermeside sağlanmıştır.
+
+İlk olarak ürünün oluşturulacağı sayfa açılır.
+
+![alt tag](https://github.com/bsokat/GetAllProducts_WebAPI/blob/master/Source/CreateProduct1.png)
+
+Daha sonra textbox'lar doldurulup **Oluştur** butonuna basıldığı zaman, aynı **Id**'ye sahip ürün daha önce eklendiyse hata mesajı görüntülenmektedir.
+
+![alt tag](https://github.com/bsokat/GetAllProducts_WebAPI/blob/master/Source/CreateProduct2.png)
+
+Eğer textbox'lar doldurulup **Oluştur** butonuna basıldığı zaman, aynı **Id**'ye sahip ürün daha önce eklenmediyse hata mesajı yerine işlem başarılı mesajı görüntülenmektedir.
+
+![alt tag](https://github.com/bsokat/GetAllProducts_WebAPI/blob/master/Source/CreateProduct3.png)
