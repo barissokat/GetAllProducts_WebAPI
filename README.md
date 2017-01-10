@@ -6,6 +6,20 @@
 
 ASP.Net MVC projelerinde Web API uygulaması farklı şekillerde oluşturulabilir. Bunlardan biri her iki projeyi farklı projelerde oluşturmak, ikincisi her iki proje aynı proje içinde yani tek proje olarak oluşturmaktır. Bu proje için ortak tek proje yöntemi seçilmiştir. Bu projede bir modelde tutulan ürün listelerinin Web API yardımıyla listelenmesi konusu ele alınmıştır.
 
+## Eklenen veya Güncellenen Dosyalar
+
+- Controller 
+	1. ProductController.cs
+	2. ProductsController.cs
+	3. WebsiteApiController.cs
+- Models
+	1. Product.cs
+- Views
+	1. Products
+		- AllProducts.cshtml
+		- CreateProduct.cshtml
+		- GetProduct.cshtml
+
 ## Web API'nin Test Edilmesi
 
 #### Tüm Ürünleri Listelemek
