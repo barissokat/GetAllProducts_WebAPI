@@ -14,8 +14,24 @@ ASP.Net MVC projelerinde Web API uygulaması farklı şekillerde oluşturulabili
 
 İlk olarak tüm ürünleri listeleyecek sayfa açılır.
 
-![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/GetAllProducts1.png)
+![alt tag](https://github.com/bsokat/GetAllProducts_WebAPI/blob/master/Source/GetAllProducts1.png)
 
 Daha sonra **Ürünleri Listele** butonuna basılarak tüm ürünlerin listelenmesi sağlanır.
 
-![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/GetAllProducts1.png)
+![alt tag](https://github.com/bsokat/GetAllProducts_WebAPI/blob/master/Source/GetAllProducts1.png)
+
+#### Girilen Id'ye Sahip Ürünü Getirme
+
+Getirilmesi istenilen id'ye sahip ürünün, id girilmesiyle tüm ürünlerin bulunduğu projeden çekilerek sayfaya yazdırılacağı düşünülmüştür.
+
+İlk olarak ürünün yazdırılacağı sayfa açılır sayfa açılır.
+
+![alt tag](https://github.com/bsokat/GetAllProducts_WebAPI/blob/master/Source/GetWithId1.png)
+
+Daha sonra istenilen **Id** textbox'a yazılarak **Ürünü Getir** butonuna basılarak, o Id'ye sahip ürünün sayfaya yazdırılması sağlanır.
+
+![alt tag](https://github.com/bsokat/GetAllProducts_WebAPI/blob/master/Source/GetWithId2.png)
+
+Eğer girilen Id'ye sahip ürün, tüm ürünler listesinde bulunmuyorsa, aşağıdaki ekran görüntüsü gibi hata mesajı sayfada gösterilir.
+
+![alt tag](https://github.com/bsokat/GetAllProducts_WebAPI/blob/master/Source/GetWithId3.png)
